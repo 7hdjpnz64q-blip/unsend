@@ -1,18 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <title>💌 Unsaid</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<img src="IMG_5535.jpeg" alt="letter image">
-  <!-- HOME SCREEN -->
-  <div class="screen" id="homeScreen">
-    <div class="terminal">
 
-      <!-- HEADER -->
-      <div class="status-bar">
-        <span>[|||| ] 86%</span>
-        <span>MON · JUN</span>
+<body>
+
+<!-- HOME SCREEN -->
+<div class="screen" id="homeScreen">
+  <div class="terminal">
+
+    <!-- HEADER -->
+    <div class="status-bar">
+      <span>[|||| ] 86%</span>
+      <span>MON · JUN</span>
+    </div>
+
+    <!-- TERMINAL INPUT -->
+    <input type="text" placeholder="> _" id="enterInput" autofocus />
+
+    <!-- FOOTER -->
+    <div class="footer-bar">
+      <div class="left-icons">
+        <span>🌐</span>
+        <span>🔍</span>
+        <span>@</span>
       </div>
+
+      <div class="right-icons">
+        <span>╰┈➤</span>
+        <span class="time">12:00</span>
+        <div class="right-end">
+          <span>🏠</span>
+          <span>🔒</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- MAIN CONTAINER (LETTER PAGE) -->
+<div class="container" id="mainContainer" style="display:none;">
+
+  <!-- top left -->
+  <div class="top-left">
+    <p class="small">UNSENT</p>
+    <p>To my younger self</p>
+    <p>— archive</p>
+  </div>
+
+  <!-- top right -->
+  <div class="top-right">
+    <p>Letter for you</p>
+    <p>read slowly</p>
+  </div>
+
+  <!-- center quote -->
+  <div class="center-text">
+    <p>
+      As long as I’m here<br>
+      <span>// you were never alone //</span>
+    </p>
+  </div>
+
+  <!-- letter image -->
+  <div class="main-image">
+    <img src="IMG_5535.jpeg" alt="letter">
+  </div>
+
+  <!-- message box -->
+  <div class="letter-input">
+    <textarea id="message" placeholder="Write what you never said..."></textarea>
+    <button id="sendBtn">Send</button>
+  </div>
+
+  <div id="messagesContainer"></div>
+
+  <!-- bottom -->
+  <div class="bottom-text">unsaid</div>
+
+  <button id="backBtn" class="back-btn">← Back</button>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
